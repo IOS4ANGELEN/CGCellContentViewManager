@@ -6,7 +6,7 @@
 
 ### 简介
 
-用一种优雅的方式去解决 UITableViewCell 在选中过程中，cell 的 contentView 中的 subviews 背景颜色变透明的分类
+一种优雅的方式去解决 UITableViewCell 在选中过程中，cell 的 contentView 中的 subviews 背景颜色变透明的问题
 
 **常见解决方法**
 
@@ -27,7 +27,12 @@ cell.selectionStyle = UITableViewCellSelectionStyleNone;
 
 ## 用法
 
-只需要添加两个文件到你的工程中，不需要进行任何的设置。当 cell 被点击时，所有 cell 的 contentView 中的子视图，将不再会改变颜色。
+只需要添加两个文件
+
+- CGCellContentViewManager/UIView+CGCellContentViewManager.h
+- CGCellContentViewManager/UIView+CGCellContentViewManager.m
+
+到你的工程中，不需要进行任何的设置。当 cell 被点击时，所有 cell 的 contentView 中的子视图，将不再会改变颜色。
 
 如果你想对某个 cell 关闭 CGCellContentViewManager 对它的自动管理：
 
@@ -47,13 +52,10 @@ customSubview.cg_cellContentViewManagerDisabled = YES;
 
 ### CocoaPods
 
-通过 CocoaPods 安装
+暂时不支持通过 CocoaPods 安装，请手动添加以下文件到你的工程中
 
-```
-
-pod 'CGCellContentViewManager', '1.0'
-
-```
+- CGCellContentViewManager/UIView+CGCellContentViewManager.h
+- CGCellContentViewManager/UIView+CGCellContentViewManager.m
 
 ## 许可
 

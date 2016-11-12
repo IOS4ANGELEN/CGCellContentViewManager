@@ -12,9 +12,9 @@ English Doc **·** [中文文档](https://github.com/CoderGin/CGCellContentViewM
 
 ### Introduction
 
-An elegant way to solve the problem while clicking a UITableViewCell, the subviews in the cell's contentView will change backgroundColor as our unexpected.
+An elegant way to solve the problem while we're clicking a UITableViewCell, the subviews in the cell's contentView's backgroundColor changed unexpected.
 
-**Common Solution**
+**A common Solution**
 
 Disable the native cell's selection style:
 
@@ -24,16 +24,20 @@ cell.selectionStyle = UITableViewCellSelectionStyleNone;
 
 ```
 
-And then add a button to fill with the cell's contentView to imitate the native selection style.
+And then add a button to cover the cell's contentView, to imitate the native selection style.
 
 But it seems to be a little complex.
 
-**Try CGCellContentViewManager!**
-**It can make you away from these unnecessary troubles**
+**Try CGCellContentViewManager! It can keep you away from these unnecessary troubles**
 
 ## Usage
 
-Just add 2 files into your project, and no need for any setups. All the subviews in the cell's contentView will never change backgroundColor when the cell is clicking.
+Just add 2 files
+
+- CGCellContentViewManager/UIView+CGCellContentViewManager.h
+- CGCellContentViewManager/UIView+CGCellContentViewManager.m
+
+to your project, and needn't for any setups. All the subviews in the cell's contentView will never change backgroundColor while we're clicking the cell.
 
 To disable the CGCellContentViewManager's auto-work for a cell:
 
@@ -53,13 +57,14 @@ customSubview.cg_cellContentViewManagerDisabled = YES;
 
 ### CocoaPods
 
-Use with CocoaPods
+Sorry, the CGCellContentViewManager not supports for Cocoapods now!
 
-```
+Please drag the 
 
-pod 'CGCellContentViewManager', '1.0'
+- CGCellContentViewManager/UIView+CGCellContentViewManager.h
+- CGCellContentViewManager/UIView+CGCellContentViewManager.m
 
-```
+2 files into your project manually.
 
 ## License
 

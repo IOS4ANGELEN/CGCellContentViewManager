@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
   s.name         = "CGCellContentViewManager"
   s.version      = "1.0"
-  s.summary      = "An elegant way to solve the problem while clicking a UITableViewCell, the subviews in the cell's contentView will change backgroundColor as our unexpected."
+  s.summary      = "A category to easily forbid the subview's changing backgroundColor handle in UITableViewCell's contentView while your cell is clicking. "
   s.description  = "An elegant way to solve the problem while clicking a UITableViewCell, the subviews in the cell's contentView will change backgroundColor as our unexpected."
   s.homepage     = "https://github.com/CoderGin/CGCellContentViewManager"
 
