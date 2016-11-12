@@ -28,7 +28,7 @@ And then add a button to cover the cell's contentView, to imitate the native sel
 
 But it seems to be a little complex.
 
-**Try CGCellContentViewManager! It can keep you away from these unnecessary troubles**
+**Try CGCellContentViewManager! It can keep you away from these unnecessary trouble**
 
 ## Usage
 
