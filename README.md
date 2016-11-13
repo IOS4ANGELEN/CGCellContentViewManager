@@ -2,7 +2,7 @@
 
 ## Doc
 
-English Doc **·** [中文文档](https://github.com/CoderGin/CGCellContentViewManager/blob/master/README-Chinese.md)
+English Doc **·** [中文文档](https://github.com/CoderGin/CGCellContentViewManager/blob/master/中文文档.md)
 
 ---
 
@@ -55,16 +55,21 @@ customSubview.cg_cellContentViewManagerDisabled = YES;
 
 ```
 
+### Compatibility
+
+Both supports Objective - C and Swift
+
+In a Swift project, the Objective - C Bridging Header may not be required.
+
 ### CocoaPods
 
-Sorry, the CGCellContentViewManager not supports for Cocoapods now!
+Use with CocoaPods
 
-Please drag the 
+```
 
-- CGCellContentViewManager/UIView+CGCellContentViewManager.h
-- CGCellContentViewManager/UIView+CGCellContentViewManager.m
+pod 'CGCellContentViewManager', '1.0'
 
-2 files into your project manually.
+```
 
 ## License
 
